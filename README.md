@@ -29,8 +29,7 @@ $ python manage.py createsuperuser
 $ python manage.py runserver
 ~~~
 
-___
-
+***
 * crawl_twitter_data.py 파일에서 원하는 트위터 계정과 해시태그를 넣어 이미지를 크롤링하고, 
 트위터 정보(이미지url, 계정id 등)를 DB에 저장한다.
 
