@@ -1,5 +1,9 @@
 # crawling-twitter-image
 crawl twitter image and post photos on django webpage
+* crawl_twitter_data.py 파일에서 원하는 트위터 계정과 해시태그를 넣어 이미지를 크롤링하고, 
+트위터 정보(이미지url, 계정id 등)를 DB에 저장한다.
+
+* django MTV 패턴을 이용하여 크롤링한 이미지가 웹페이지에 나오도록 한다.
 
 ## Install
 1. pycharm에서 프로젝트 생성
@@ -29,8 +33,8 @@ $ python manage.py createsuperuser
 $ python manage.py runserver
 ~~~
 
-***
-* crawl_twitter_data.py 파일에서 원하는 트위터 계정과 해시태그를 넣어 이미지를 크롤링하고, 
-트위터 정보(이미지url, 계정id 등)를 DB에 저장한다.
 
-* django MTV 패턴을 이용하여 크롤링한 이미지가 웹페이지에 나오도록 한다.
+6. 크롤링하는 python파일(crawl_twitter_data.py) 실행
+~~~
+$ python crawl_twitter_data.py
+~~~
